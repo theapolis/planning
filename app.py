@@ -8,7 +8,7 @@ ANNIVERSARY = '4/27/2018'
 MULTIPLIER = 1.5
 
 @app.route('/')
-def hello_world():
+def the_max():
     time_together = calculate_time()
     curr_max = '{:%m/%d/%Y}'.format(calculate_max(time_together))
     return f'Our first date was on {ANNIVERSARY}. We have been dating for {time_together} days.  Our current planning max is {curr_max}.'
